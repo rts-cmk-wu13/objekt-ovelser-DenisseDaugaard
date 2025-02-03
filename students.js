@@ -10,9 +10,10 @@ students.forEach(function(student){
     // console.log(student.name);
     // console.log(student.age);
     // console.log(student.course);
-    const studentDiv = document.createElement("div")
+    let studentDiv = document.createElement("div")
+    studentDiv.classList.add("student")
     //console.log(studentDiv);
-    studentDiv.textContent = ` Elev:${student.name} Alder:${student.age} Uddanelse:${student.course} <br>`
-    studentsDivList.append(studentDiv)
+    studentDiv.textContent = ` Elev:${student.name} Alder:${student.age} Uddanelse:${student.course}`
+    studentsDivList.appendChild(studentDiv)
 
 });
